@@ -1,0 +1,21 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.paginator {
+    display:inline-block;
+    margin-bottom: 30px;
+
+}
+
+.page {
+    cursor: pointer;
+    display:inline;
+    padding: 10px;
+}
+
+.selected-page {
+    background: #50044c;
+    color: aliceblue;
+}

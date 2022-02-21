@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div style="text-align:center">
+  
+  <input class="form-control mr-sm-2" type="search" [(ngModel)]="q" placeholder="Search..." (keyup)="search($event, 0)" placeholder="{{'personajes.Buscar'|translate}}" aria-label="Buscar">
+
+  <div class="main-container">
+    <div class="character-container" *ngFor="let character of characters" style="margin:20px;">
+      
+      <img class="avatar" [src]="character.image" [alt]="character.name">
+      <div style="background-color: rgb(0, 0, 0);" >
+        <h3 class="nombres">{{character.name}}</h3>
+        <p>{{'personajes.Estado'|translate}}: {{character.status}}</p>
+        <p>{{'personajes.Especie'|translate}}: {{character.species}}</p>
+        <p>{{'personajes.Género'|translate}}: {{character.gender}}</p>
+
+      </div>
+      
+    </div>
+  </div> 
+
+  
+  <div class="container-pages">
+    <ul class="paginator">
+      <li *ngFor="let page of pages;let i = index" (click)="search($event, i)" [className]="'page ' + (i + 1 === currentPage? 'selected-page': '')">
+        {{i + 1}}
+      </li>
+    </ul>
+  </div>
+  <footer> </footer>
+
+</div>

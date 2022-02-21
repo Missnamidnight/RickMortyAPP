@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="container">
+
+<form [formGroup]="formFiltrar" class="form-inline">
+    <div class="row">
+         
+        <div class="col-4 " >
+            <select type="text" [(ngModel)]="buscarlocalizaciones.type" class="form-control select " formControlName="form">
+                <option  selected disabled>Seleccione un valor para filtrar el contenido</option>
+
+                <option *ngFor="let localizacion of localizaciones;" [value]="localizacion">{{localizacion}}</option>
+            </select>
+           
+            
+        </div>
+       
+        <div class="col-2">
+            <a  type="button" class="bttn" (click)="fitrarLocalizaciones();">Filtrar</a>
+          </div>
+    </div> 
+</form>
+
+    <table class="table table-sm table-dark" style="background-color: black; font-size:20px;">
+        <tr>
+            <th>#</th>
+            <th>Planeta</th>
+             <th>Tipo</th> 
+             <th>Dimensión</th> 
+
+        </tr>
+        <tr *ngFor="let localizacion of busqueda"> 
+            <td>{{localizacion.id}} </td> 
+            <td>{{localizacion.name}} </td> 
+            <td>{{localizacion.type}}</td>
+            <td>{{localizacion.dimension}}</td> 
+            
+        </tr>
+      
+      </table>
+      
+    </div>

@@ -1,0 +1,17 @@
+{
+    "header" : {
+      "Personajes": "Personajes",
+      "Capítulos": "Capítulos",
+        "Tráilers" : "Tráilers",
+        "BSO" : "BSO",
+        "Localizaciones":"Localizaciones"
+
+    },
+
+    "personajes":{
+        "Buscar" : "Buscar",
+        "Estado" : "Estado",
+        "Especie": "Especie",
+        "Género" : "Género"
+    }
+  }

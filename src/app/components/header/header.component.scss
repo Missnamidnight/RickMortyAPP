@@ -1,0 +1,25 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:700';
+
+$font:'Source Sans Pro', sans-serif;
+$primary:#1bb7cc;
+
+.button1 {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #000000;
+}
+
+.button1:hover {
+    background-color: #f2fff3;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    font-size:18px;
+    color:$primary;
+    
+    &:focus {
+      color:rgb(136, 255, 0);
+    }
+  }
+ 

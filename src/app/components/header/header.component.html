@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/2560px-Rick_and_Morty.svg.png" width="150px"/> </a><button class="navbar-toggler" style="color: aliceblue;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menú
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/">{{ 'header.Personajes' | translate }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/localizaciones']">{{ 'header.Localizaciones' | translate }}</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/seccioncapitulos']">{{ 'header.Capítulos' | translate }}</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/trailers']">{{ 'header.Tráilers' | translate }}</a>
+          </li>
+         
+        </ul>
+        <p *ngFor="let datos of datosUsuario" style="font-size: 18px;margin-top:25px;"><img src="https://androidrey.com/uploads/posts/2021-06/1623400593_com.turner.pocketmorties_icon.png" width="50px">{{datos.nombre}} {{datos.apellidos}}</p>
+
+             <button class="nav-link button button1" (click)="changeLanguageToSpanish();"><img src="https://www.comprarbanderas.es/images/banderas/400/60-espana-sin-escudo_400px.jpg" width="50px"></button> 
+              <br>
+              <button class="nav-link button button1" (click)="changeLanguageToEnglish();"><img src="https://i0.wp.com/oij.org/wp-content/uploads/2017/02/bandera-inglés.png?ssl=1" width="50px"></button> 
+           
+                            
+      </div>
+    </div>
+    
+  </nav>
+  

@@ -1,0 +1,16 @@
+{
+    "header":{
+        "Personajes" : "Characters",
+        "Capítulos" : "Chapters",
+        "BSO" : "Soundtrack",
+        "Localizaciones":"Locations"
+
+    },
+    "personajes":{
+        "Buscar" : "Search",
+        "Estado" : "Status",
+        "Especie": "Species",
+        "Género" : "Gender"
+
+    }
+}

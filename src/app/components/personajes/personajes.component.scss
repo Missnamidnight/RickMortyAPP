@@ -1,0 +1,43 @@
+input[type=search] {
+    width: 50%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.paginator {
+    display:inline-block;
+    margin-bottom: 30px;
+
+}
+
+.page {
+    cursor: pointer;
+    display:inline;
+    padding: 10px;
+}
+
+.selected-page {
+    background: #50044c;
+    color: aliceblue;
+}
+
+.nombres{
+    color: #c530be;
+}
+.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 250px;
+    width: 250px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
